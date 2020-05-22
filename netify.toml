@@ -1,4 +1,4 @@
 [build]
-  base = "docs/"
-  publish = "docs/out/"
+  base = "docs"
+  publish = "docs/out"
   command = "yarn deploy"
