@@ -63,7 +63,7 @@ Internet Explorer (10+) is only partially supported.
 
 ## Documentation
 
-The documentation resides in the [docs](docs) directory, and is built with the Next.js Static Gen [Nextjs](https://nextjs.org/) tool.
+The documentation resides in the [docs](docs) directory, and is built with the [Nextjs Static Gen](https://nextjs.org/).
 
 Browse the [online documentation here.](https://styleup.dev/documentation/overview/start/)
 
