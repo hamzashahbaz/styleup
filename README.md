@@ -1,6 +1,6 @@
 # [Styleup](https://styleup.dev)
 
-Styleup is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) and [Grid] for faster and easier UI development.
+Styleup is a **modern CSS framework** for faster and easier UI development.
 
 [![npm](https://img.shields.io/npm/v/styleup.svg)][npm-link]
 [![npm](https://img.shields.io/npm/dm/styleup.svg)][npm-link]
