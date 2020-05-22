@@ -9,3 +9,4 @@
 // with random salt data, making it impossible for us to reverse or try to
 // guess the remote by re-computing hashes.
 function _getProjectIdByGit(){try{const originBuffer=(0,_child_process.execSync)(`git config --local --get remote.origin.url`,{timeout:1000,stdio:`pipe`});return String(originBuffer).trim();}catch(_){return null;}}function getRawProjectId(){return _getProjectIdByGit()||process.env.REPOSITORY_URL||process.cwd();}
+//# sourceMappingURL=project-id.js.map

@@ -3,3 +3,4 @@
 
   export default createHook(undefined, {key: ${JSON.stringify((0,_path.basename)(filename)+'-'+(0,_stringHash.default)(filename))}})
   `;};var _default=nextDataLoader;exports.default=_default;
+//# sourceMappingURL=next-data-loader.js.map

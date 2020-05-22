@@ -16,7 +16,7 @@ export default class DevServer extends Server {
     protected currentPhase(): string;
     protected readBuildId(): string;
     addExportPathMapRoutes(): Promise<void>;
-    startWatcher(): Promise<unknown>;
+    startWatcher(): Promise<void>;
     stopWatcher(): Promise<void>;
     prepare(): Promise<void>;
     protected close(): Promise<void>;

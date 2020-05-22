@@ -12,3 +12,4 @@
       If no directory is provided, the current directory will be used.
     `,0);}const dir=(0,_path.resolve)(args._[0]||'.');// Check if the provided directory exists
 if(!(0,_fs.existsSync)(dir)){(0,_utils.printAndExit)(`> No such directory exists as the project root: ${dir}`);}(0,_build.default)(dir).then(()=>process.exit(0)).catch(err=>{console.error('');console.error('> Build error occurred');(0,_utils.printAndExit)(err);});};exports.nextBuild=nextBuild;
+//# sourceMappingURL=next-build.js.map

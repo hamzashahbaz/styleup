@@ -5,3 +5,4 @@ loaders.push({loader:require.resolve('css-loader'),options:{importLoaders:1+preP
 loaders.push({loader:require.resolve('next/dist/compiled/postcss-loader'),options:{ident:'__nextjs_postcss',plugins:postCssPlugins,sourceMap:true}});loaders.push(// Webpack loaders run like a stack, so we need to reverse the natural
 // order of preprocessors.
 ...preProcessors.slice().reverse());return loaders;}
+//# sourceMappingURL=global.js.map

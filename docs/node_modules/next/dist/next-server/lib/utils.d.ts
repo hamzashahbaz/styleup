@@ -139,7 +139,7 @@ export declare type DocumentProps = DocumentInitialProps & {
 /**
  * Next `API` route request
  */
-export declare type NextApiRequest = IncomingMessage & {
+export interface NextApiRequest extends IncomingMessage {
     /**
      * Object of `query` values from url
      */
@@ -154,7 +154,7 @@ export declare type NextApiRequest = IncomingMessage & {
     };
     body: any;
     env: Env;
-};
+}
 /**
  * Send body of response
  */

@@ -10,3 +10,4 @@ return _loaderUtils.default.interpolateName(context,fileNameOrFolder+'_'+exportN
 .replace(/[^a-zA-Z0-9-_]/g,'_')// "they cannot start with a digit, two hyphens, or a hyphen followed by a digit [sic]"
 // https://www.w3.org/TR/CSS21/syndata.html#characters
 .replace(/^(\d|--|-\d)/,'__$1');}
+//# sourceMappingURL=getCssModuleLocalIdent.js.map

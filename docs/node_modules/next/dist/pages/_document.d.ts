@@ -48,7 +48,6 @@ export declare class Head extends Component<OriginProps & React.DetailedHTMLProp
     getCssLinks(): JSX.Element[] | null;
     getPreloadDynamicChunks(): (JSX.Element | null)[];
     getPreloadMainLinks(): JSX.Element[] | null;
-    getFidPolyfill(): JSX.Element | null;
     render(): JSX.Element;
 }
 export declare class Main extends Component {
