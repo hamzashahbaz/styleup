@@ -3,3 +3,4 @@ out
 .next
 .env
 .now
+yarn.lock
