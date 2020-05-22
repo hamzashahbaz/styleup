@@ -1,19 +1,19 @@
 {
-	"name": "fiberui-css",
+	"name": "styleup",
 	"version": "0.0.1",
-	"homepage": "https://fiberui.com",
+	"homepage": "https://styleup.dev",
 	"author": {
 		"name": "Hamza Shahbaz",
-		"email": "contact@hamzashahbaz.me",
-		"url": "https://hamzashahbaz.me"
+		"email": "hi@hamzashahbaz.dev",
+		"url": "https://hamzashahbaz.dev"
 	},
 	"description": "CSS framework for faster and easier user interface development.",
-	"main": "index.sass",
-	"unpkg": "css/fiber.css",
-	"style": "css/fiber.min.css",
+	"main": "styleup.scss",
+	"unpkg": "css/styleup.css",
+	"style": "css/styleup.min.css",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/fiberui/css.git"
+		"url": "git+https://github.com/hamzashahbaz/styleup.git"
 	},
 	"license": "MIT",
 	"keywords": [
@@ -24,7 +24,7 @@
 		"framework"
 	],
 	"bugs": {
-		"url": "https://github.com/fiberui/css/issues"
+		"url": "https://github.com/hamzashahbaz/styleup/issues"
 	},
 	"devDependencies": {
 		"autoprefixer": "^9.7.6",
@@ -35,17 +35,18 @@
 	},
 	"scripts": {
 		"build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-		"build-autoprefix": "postcss --use autoprefixer --map false --output css/fiber.css css/fiber.css",
-		"build-cleancss": "cleancss -o css/fiber.min.css css/fiber.css",
+		"build-autoprefix": "postcss --use autoprefixer --map false --output css/styleup.css css/styleup.css",
+		"build-cleancss": "cleancss -o css/styleup.min.css css/styleup.css",
 		"build-clean": "rimraf css",
-		"build-sass": "node-sass --output-style expanded --source-map true index.scss css/fiber.css",
+		"build-sass": "node-sass --output-style expanded --source-map true index.scss css/styleup.css",
 		"deploy": "npm run build",
 		"start": "npm run build-sass -- --watch"
 	},
 	"files": [
 		"css",
 		"sass",
-		"index.sass",
+		"scss",
+		"styleup.scss",
 		"LICENSE",
 		"README.md"
 	]
