@@ -1,0 +1,29 @@
+{
+  "name": "@fiber-ui/css",
+  "version": "0.0.1",
+  "description": "Modern CSS Framework",
+  "main": "index.scss",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzashahbaz/fiber-ui/tree/master/css"
+  },
+  "keywords": [
+    "css",
+    "css-framework"
+  ],
+  "author": "Hamza Shahbaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamzashahbaz/fiber-css/issues"
+  },
+  "homepage": "https://github.com/hamzashahbaz/fiber-css#readme",
+  "dependencies": {
+    "styling-utilities": "^2.7.0"
+  }
+}
