@@ -1,11 +1,53 @@
 {
-	"private": true,
-	"workspaces": {
-		"packages": [
-			"packages/*"
-		]
+	"name": "styleup",
+	"version": "0.0.1",
+	"homepage": "https://styleup.dev",
+	"author": {
+		"name": "Hamza Shahbaz",
+		"email": "hi@hamzashahbaz.dev",
+		"url": "https://hamzashahbaz.dev"
+	},
+	"description": "CSS framework for faster and easier user interface development.",
+	"main": "styleup.scss",
+	"unpkg": "css/styleup.css",
+	"style": "css/styleup.min.css",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hamzashahbaz/styleup.git"
+	},
+	"license": "MIT",
+	"keywords": [
+		"css",
+		"sass",
+		"flexbox",
+		"responsive",
+		"framework"
+	],
+	"bugs": {
+		"url": "https://github.com/hamzashahbaz/styleup/issues"
 	},
 	"devDependencies": {
-		"lerna": "^3.21.0"
-	}
+		"autoprefixer": "^9.7.6",
+		"clean-css-cli": "^4.3.0",
+		"node-sass": "^4.13.1",
+		"postcss-cli": "^7.1.0",
+		"rimraf": "^3.0.2"
+	},
+	"scripts": {
+		"build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+		"build-autoprefix": "postcss --use autoprefixer --map false --output css/styleup.css css/styleup.css",
+		"build-cleancss": "cleancss -o css/styleup.min.css css/styleup.css",
+		"build-clean": "rimraf css",
+		"build-sass": "node-sass --output-style expanded --source-map true index.scss css/styleup.css",
+		"deploy": "npm run build",
+		"start": "npm run build-sass -- --watch"
+	},
+	"files": [
+		"css",
+		"sass",
+		"scss",
+		"styleup.scss",
+		"LICENSE",
+		"README.md"
+	]
 }
