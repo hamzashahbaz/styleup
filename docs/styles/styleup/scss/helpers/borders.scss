@@ -1,0 +1,26 @@
+$side: (top, bottom, right, left)
+$style: (dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden)
+$color: (red)
+
+@for $i from 1 through 500
+
+    .border-#{$style}-#{$i}-#{$color}
+        border-style: #{$style} !important
+        border-width: #{$i}px !important
+        border-color: #{$color} !important
+
+    .border-#{$i}
+        border-width: #{$i}px !important
+
+    .border-#{$color}
+        border-color: #{$color} !important
+
+    .border-#{$style}
+        border-style: #{$style} !important
+
+    .border-radius-#{$i}
+        border-radius: #{$i}px !important
+
+    @each $side in $sides 
+        .border-#{$side}-#{$style}-#{$i}
+            border-#{side}: #{$i}px #{$style} #{$color} !important

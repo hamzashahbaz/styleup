@@ -1,4 +1,4 @@
-import '../../packages/styleup/styleup.scss';
+import '../styles/style.scss';
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />;

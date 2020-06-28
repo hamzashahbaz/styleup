@@ -1,0 +1,68 @@
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100, 150); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .has-padding-#{$side}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+/*
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        @include mobile() {
+            .has-padding-#{$side}-#{$space}-mobile {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include tablet() {
+            .has-padding-#{$side}-#{$space}-tablet {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include tablet-only() {
+            .has-padding-#{$side}-#{$space}-tablet-only {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include touch() {
+            .has-padding-#{$side}-#{$space}-touch {
+                padding-#{$side}: #{$space}px !important;               
+            }
+        }
+        
+        @include desktop() {
+            .has-padding-#{$side}-#{$space}-desktop {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include desktop-only() {
+            .has-padding-#{$side}-#{$space}-desktop-only {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include widescreen() {
+            .has-padding-#{$side}-#{$space}-widescreen {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include widescreen-only() {
+            .has-padding-#{$side}-#{$space}-widescreen-only {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+        
+        @include fullhd() {
+            .has-padding-#{$side}-#{$space}-fullhd {
+                padding-#{$side}: #{$space}px !important;
+            }
+        }
+    }
+}*/

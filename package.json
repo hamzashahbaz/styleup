@@ -29,6 +29,7 @@
 	"devDependencies": {
 		"autoprefixer": "^9.7.6",
 		"clean-css-cli": "^4.3.0",
+		"copyfiles": "^2.3.0",
 		"node-sass": "^4.13.1",
 		"postcss-cli": "^7.1.0",
 		"rimraf": "^3.0.2"
@@ -38,9 +39,11 @@
 		"build-autoprefix": "postcss --use autoprefixer --map false --output css/styleup.css css/styleup.css",
 		"build-cleancss": "cleancss -o css/styleup.min.css css/styleup.css",
 		"build-clean": "rimraf css",
-		"build-sass": "node-sass --output-style expanded --source-map true index.scss css/styleup.css",
+		"build-sass": "node-sass --output-style expanded --source-map true styleup.scss css/styleup.css",
+		"build-sass-watch": "node-sass --output-style expanded --source-map true styleup.scss css/styleup.css && npm run copy",
 		"deploy": "npm run build",
-		"start": "npm run build-sass -- --watch"
+		"start": "npm run build-sass-watch --watch",
+		"copy": "copyfiles scss/**/*.scss styleup.scss out docs/styles/styleup"
 	},
 	"files": [
 		"css",
