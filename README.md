@@ -6,7 +6,7 @@ Styleup is a **modern CSS framework** for faster and easier UI development.
 [![npm](https://img.shields.io/npm/dm/styleup.svg)][npm-link]
 [![](https://data.jsdelivr.com/v1/package/npm/styleup/badge)](https://www.jsdelivr.com/package/npm/styleup)
 [![Join the chat at https://gitter.im/jgthms/styleup](https://badges.gitter.im/jgthms/styleup.svg)](https://gitter.im/hamzashahbaz/styleup)
-[![Build Status](https://travis-ci.org/hamzashahbaz/styleup.svg?branch=master)](https://travis-ci.org/hamzashahbaz/styleup)
+[![Build Status](https://travis-ci.org/hamzashahbaz/styleup.svg?branch=master)](https://travis-ci.org/hamzashahbaz/styleup) [![Join the chat at https://gitter.im/hamzashahbaz/styleup](https://badges.gitter.im/hamzashahbaz/styleup.svg)](https://gitter.im/hamzashahbaz/styleup?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Quick install
 
